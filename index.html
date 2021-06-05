@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Coding Bootcamp Testimonials Slider</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <!-- Container -->
+  <div class="container">
+
+    <!-- Slide wrapper -->
+    <div class="slide-wrapper">
+      <!-- Slide 1 Portrait -->
+      <div class="slide-img">
+        <img src="./images/image-tanya.jpg" alt="Tanya Sinclair portrait">
+      </div>
+  
+      <!-- Slide 2 Portrait -->
+      <div class="slide-img">
+        <img src="./images/image-john.jpg" alt="John Tarkpor portrait">
+      </div>
+  
+    </div>
+    
+    <!-- Navigation arrows -->
+    <div class="nav-container">
+      <div class="nav-wrapper">
+        <a class="prev" onclick="slide(-500)"><i class="fas fa-chevron-left"></i></a>
+        <a class="next" onclick="slide(500)"><i class="fas fa-chevron-right"></i></a>
+      </div>
+    </div>
+
+    <!-- Slide 1 text -->
+    <div class="slide-txt">
+      <p class="quote">
+        “ I’ve been interested in coding for a while but never taken the jump, until now. I couldn’t recommend this course enough. I’m now in the job of my dreams and so excited about the future. ”
+      </p>
+      <div class="person">
+        <span class="name">
+          Tanya Sinclair
+        </span>
+        <span class="title">
+          UX Engineer
+        </span>
+      </div>
+    </div>
+    
+    <!-- Slide 2 text -->
+    <div class="slide-txt">
+      <p class="quote">
+        “ If you want to lay the best foundation possible I’d recommend taking this course. The depth the instructors go into is incredible. I now feel so confident about starting up as a professional developer. ”
+      </p>
+      <div class="person">
+        <span class="name">
+          John Tarkpor
+        </span>
+        <span class="title">
+          Junior Front-end Developer
+        </span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  <!-- Footer -->
+  <footer class="attribution">
+    <div class="wrapper">
+      Challenge by&nbsp<a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by&nbsp<a href="https://github.com/AyulaBoyilo">Ayula Boyilo</a>.
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js">
+  </script>
+  <script src="./js/main.js"></script>
+</body>
+</html>
