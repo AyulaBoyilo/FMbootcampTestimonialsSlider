@@ -1,0 +1,18 @@
+@use 'colors' as *;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f0f0f0;
+}
+
+.slide-img,
+.slide-txt {
+  display: none;
+  opacity: 0;
+}

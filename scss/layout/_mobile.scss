@@ -1,0 +1,115 @@
+@use '../base' as *;
+
+.container {
+  width: 100vw;
+  background: url("../images/pattern-bg.svg") no-repeat top 6vw center / 88vw,
+    url("../images/pattern-curve.svg") no-repeat bottom left / 70vw;
+  background-color: #fff;
+  box-shadow: 0 0 10px darken($color: #f0f0f0, $amount: 10);
+}
+
+.slide-wrapper {
+  width: 67vw;
+  height: 67vw;
+  margin: auto;
+  padding-top: 16.5vw;
+}
+
+.slide-img {
+  overflow: hidden;
+  width: 67vw;
+  height: 67vw;
+  border-radius: 5px;
+  box-shadow: 0 40px 50px -30px saturate($color: $nav-gray, $amount: 10);
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.nav-container {
+  position: absolute;
+  top: 83.5vw;
+  width: 100%;
+}
+
+.nav-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  bottom: 20px;
+  left: calc(50% - 40px);
+  z-index: 1;
+  height: 40px;
+  width: 80px;
+  background-color: #fff;
+  border-radius: 100px;
+  box-shadow: 0 10px 20px
+    lighten(saturate($color: $nav-gray, $amount: 10), $amount: 20);
+
+  a {
+    cursor: pointer;
+  }
+
+  i {
+    font-size: 15px;
+    color: $nav-gray;
+  }
+}
+
+.slide-txt {
+  padding: 40px 0 70px 0;
+  margin: 26.7vw auto 0 auto;
+  max-width: 67vw;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.4;
+  position: relative;
+
+  p {
+    font-weight: 300;
+  }
+
+  .person {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+
+    .name {
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    .title {
+      font-size: 15px;
+      font-weight: 500;
+      color: $grayish-blue;
+    }
+  }
+
+  &::before {
+    content: "";
+    background: url(../images/pattern-quotes.svg) no-repeat center center / 100%
+      100%;
+    display: inline-block;
+    width: 60px;
+    height: 50px;
+    position: absolute;
+    top: 15px;
+    left: calc(50% - 30px);
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: center;
+
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}

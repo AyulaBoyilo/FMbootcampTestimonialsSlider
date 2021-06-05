@@ -1,0 +1,27 @@
+@media screen and (min-width: 600px) {
+  .nav-wrapper {
+    bottom: 3.25vw;
+    left: calc(50% - 7.16vw);
+    height: 6.51vw;
+    width: 14.32vw;
+
+    i {
+      font-size: 2.21vw;
+    }
+  }
+
+  .slide-img {
+    border-radius: 1.5vw;
+  }
+
+  .slide-txt {
+    font-size: 2.35vw;
+
+    &::before {
+      width: 7.8125vw;
+      height: 6.51vw;
+      top: 5px;
+      left: calc(50% - 30px);
+    }
+  }
+}
